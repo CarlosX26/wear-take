@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/logo.jpg" />
+    <!-- <script defer src="./js/database.js"></script> -->
+    <script defer type="module" src="./js/index.js"></script>
+    <title>WearTake</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="box-logo">
+        <img class="box-logo-img" src="./img/logo.jpg" alt="logo" />
+        <h1 class="box-logo-name">WearTake</h1>
+      </div>
+
+      <nav>
+        <ul class="cabecalho-nav">
+          <li class="nav-item"><a id="produtos-todos">Todos</a></li>
+          <li class="nav-item">
+            <a id="produtos-acessorios">Acessórios</a>
+          </li>
+          <li class="nav-item">
+            <a id="produtos-calcados">Calçados</a>
+          </li>
+          <li class="nav-item">
+            <a id="produtos-camisetas">Camisetas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main class="card">
+        <ul class="card-principal"></ul>
+      </main>
+
+      <aside class="card-lateral">
+        <input
+          class="barra-pesquisa"
+          type="text"
+          placeholder="Digite aqui sua pesquisa"
+        />
+        <button class="btn-pesquisar">Pesquisar</button>
+
+        <h2 class="carrinho-title">Carrinho de compras</h2>
+        <ul class="carrinho">
+          <li>
+            <h3 class="carrinho-alert-1">Carrinho vazio</h3>
+            <p class="carrinho-alert-2">Adicione itens</p>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>
